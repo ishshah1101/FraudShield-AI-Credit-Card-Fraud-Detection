@@ -1,4 +1,4 @@
-# 💳 Credit Card Fraud Detection using Machine Learning
+# 💳 FraudShield-AI: Credit Card Fraud Detection using Machine Learning
 
 > A machine learning project aimed at detecting fraudulent credit card transactions using supervised classification techniques on imbalanced datasets.
 
@@ -53,12 +53,13 @@ This project uses a highly imbalanced dataset to classify transactions as **frau
 
 ## 📊 Results
 
-| Model               | Accuracy | Precision | Recall | F1-Score |
-|--------------------|----------|-----------|--------|----------|
-| Logistic Regression| ✅        | ✅         | ✅     | ✅        |
-| Decision Tree      | ✅        | ✅         | ✅     | ✅        |
+| Model               | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|--------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression| ✅        | ✅         | ✅     | ✅        | ✅       |
+| Decision Tree      | ✅        | ✅         | ✅     | ✅        | ✅       |
 
-> Focus was on **Recall** and **F1-score** due to class imbalance.
+> Focus was on **Recall**, **F1-Score**, and **ROC-AUC** due to high class imbalance.
+
 
 ---
 
@@ -78,23 +79,6 @@ This project uses a highly imbalanced dataset to classify transactions as **frau
 - **Logistic Regression**: Simple baseline model for classification
 - **Decision Tree**: To capture non-linear relationships
 - **Evaluation Metrics**: Focused on Recall & F1-score due to fraud class importance
-
----
-
-## 📌 Future Improvements
-
-- Use **SMOTE** or **ADASYN** for oversampling instead of undersampling
-- Try **Ensemble models** like Random Forest or XGBoost
-- Implement **PCA** for dimensionality reduction if overfitting occurs
-- Deploy model via Flask or Streamlit
-
----
-
-## 📁 Project Status
-
-✅ Completed core implementation  
-🚧 Open for improvements and deployment  
-📈 Performance depends on train-test split randomness
 
 ---
 
